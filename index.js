@@ -1,14 +1,16 @@
 const API_KEY = "pub_514115d4ccc2db06e79944a4d383758334fdc";
 const PATH = "https://newsdata.io/api/1/latest?apikey=";
 
-window.addEventListener('load', () => fetchNews("india") );
+// window.addEventListener('load', () => fetchNews("india") );
 
-async function fetchNews(query){
-const res= await fetch(`${PATH}${API_KEY}&q=${query}`);
-const data = await res.json();
+// async function fetchNews(query){
+// const res= await fetch(`${PATH}${API_KEY}&q=${query}`);
+// const data = await res.json();
 
-console.log(data);
-}
+// console.log(data);
+// }
+
+console.log(2);
 
 
 

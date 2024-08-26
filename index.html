@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
+    <title>News Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello news data</h1>
+    <header>
+        <div class="container flex nav">
+            <div class="logo"><a href="#"><h2>News Website</h2></a></div>
+            <div>
+                <ul class="flex">
+                    <li class="nav-links">Home</li>
+                    <li class="nav-links">Politics</li>
+                    <li class="nav-links">Technology</li>
+                    <li class="nav-links">Sports</li>
+                    <li class="nav-links">Entertainment</li>
+                </ul>
+            </div>
+            <div  class="search">
+                <i class="fa-light fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search news...">
+            </div>
+        </div>
+    </header>
+
+    <script src="index.js"></script>
 </body>
 </html>
