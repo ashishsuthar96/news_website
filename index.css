@@ -26,6 +26,7 @@ body{
 
 .container{
     width: 95%;
+    margin:auto;
 }
 
 header{
@@ -33,7 +34,6 @@ header{
     color: var(--secondary-font);
 }
 .nav{
-    margin:auto;
     justify-content: space-between;
     align-items: center;
     height: 72px;
@@ -98,4 +98,34 @@ input:focus{
     border: none;
     color: #FAFAFA;
 
+}
+.cards{
+    margin-top: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    flex-direction: column;
+    width: 32%;
+    height: 420px;
+    border-radius: 8px;
+    border: 1px solid  #b3acac;
+    /* background-color: black; */
+    margin-block: 10px;
+}
+
+.card img{
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 100%;
+}
+.card h3{
+    margin-block: 5px;
+    padding-inline: 8px;
+    font-weight: 600;
+}
+.card p{
+    color: var(--secondary-color);
+    padding-inline: 8px;
 }
