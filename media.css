@@ -68,4 +68,11 @@
         right: 25px
 
     }
+    .cards{
+        justify-content: space-evenly;
+    }
+    .card{
+        width: 400px;
+    }
+
 }

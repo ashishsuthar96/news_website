@@ -68,6 +68,7 @@ ul {
 
 .nav-items{
     gap:20px;
+    justify-content: space-between;
 }
 .nav-links::after {
     content: '';
