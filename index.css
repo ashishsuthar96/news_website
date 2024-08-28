@@ -93,7 +93,7 @@ ul {
 }
 
 .btn {
-    font-size: 3vmin;
+    font-size: 1.2rem;
     background-color: var(--secondary-font);
     border: none;
     width: 38px;
@@ -115,7 +115,7 @@ input:focus{
 }
 
 .search input{
-    font-size: 3vmin;
+    font-size: 1rem;
     background: #2c2a2a;
     padding: 4px 8px 4px 8px;
     background: transparent;
