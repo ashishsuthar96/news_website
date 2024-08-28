@@ -11,6 +11,11 @@ const PATH = "https://newsdata.io/api/1/latest?apikey=";
 // }
 
 console.log(2);
+function navtoggle(){
+  const toggle =  document.getElementById('ham');
+  toggle.classList.toggle('active');
+}
+
 
 
 

@@ -18,9 +18,11 @@
     <header>
         <div class="container flex nav">
             <div class="logo">
-                <a href="#"><h2>News Website</h2></a>
+                <a href="#">
+                    <h2>News Website</h2>
+                </a>
             </div>
-            <nav class="nav-items flex">
+            <nav id="ham" class="nav-items flex">
                 <ul class="flex">
                     <li class="nav-links">Home</li>
                     <li class="nav-links">Politics</li>
@@ -34,8 +36,9 @@
                 </div>
 
             </nav>
-
-            <i class="fa-solid fa-bars ham"></i>
+            
+                <i class="fa-solid fa-bars ham" onclick="navtoggle()"></i>
+            
         </div>
     </header>
     <div class="flex cards container">

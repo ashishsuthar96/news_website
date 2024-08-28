@@ -124,6 +124,9 @@ input:focus{
 
 }
 
+.ham{
+    display: none;
+}
 /* cards */
 .cards{
     margin-top: 80px;
