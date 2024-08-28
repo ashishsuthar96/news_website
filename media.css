@@ -10,13 +10,19 @@
         flex-direction: column-reverse;
         position: absolute;
         top: 72px;
-        left: 0;
+        right: -100%;
         background-color: var(--primary-color);
         padding: 1rem;
         gap: 1rem;
         z-index: 1000;
         height: 100vh;
         justify-content: start;
+        transition: all 0.5s ease-in;
+        overflow: hidden;
+    }
+
+    .active{
+        right: 0;
     }
 
     .nav-items.active {
@@ -34,12 +40,6 @@
         text-align: center;
         margin: 0;
         padding: 0;
-    }
-
-    .ham {
-        position: absolute;
-        top: 25px;
-        right: 25px;
     }
 
     .nav-items .search {
@@ -61,8 +61,11 @@
         color: #FAFAFA;
     }
     
-    .ham{
+    #toggler{
         display: block;
         position: absolute;
+        top: 25px;
+        right: 25px
+
     }
 }

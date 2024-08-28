@@ -124,7 +124,7 @@ input:focus{
 
 }
 
-.ham{
+#toggler{
     display: none;
 }
 /* cards */
