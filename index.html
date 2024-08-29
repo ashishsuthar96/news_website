@@ -24,15 +24,15 @@
             </div>
             <nav id="ham" class="nav-items flex">
                 <ul class="flex">
-                    <li class="nav-links">Home</li>
-                    <li class="nav-links">Politics</li>
-                    <li class="nav-links">Technology</li>
-                    <li class="nav-links">Sports</li>
-                    <li class="nav-links">Entertainment</li>
+                    <!-- <li class="nav-links" onclick="reload()">Home</li> -->
+                    <li class="nav-links" id="politics" onclick="onNavItemClick('politics')"">Politics</li>
+                    <li class="nav-links" id="technology" onclick="onNavItemClick('technology')"">Technology</li>
+                    <li class="nav-links" id="sports" onclick="onNavItemClick('sports')"">Sports</li>
+                    <li class="nav-links" id="entertainment" onclick="onNavItemClick('entertainment')"">Entertainment</li>
                 </ul>
                 <div class="search">
-                    <input type="text" placeholder="Search news...">
-                    <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input id="search-text" type="text" placeholder="Search news...">
+                    <button id="search-button" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
 
             </nav>
@@ -41,54 +41,19 @@
             
         </div>
     </header>
-    <div class="flex cards container">
-        <div class="card">
-            <img src="https://placehold.co/400x200" alt="">
-            <h3>Breaking News: Major Earthquake Hits West Coast</h3>
-            <p>A powerful earthquake has struck the West Coast, causing widespread damage and disrupting power and
-                transportation services.</p>
-        </div>
-        <div class="card">
-            <img src="https://placehold.co/400x200" alt="">
-            <h3>Breaking News: Major Earthquake Hits West Coast</h3>
-            <p>A powerful earthquake has struck the West Coast, causing widespread damage and disrupting power and
-                transportation services.</p>
-        </div>
-        <div class="card">
-            <img src="https://placehold.co/400x200" alt="">
-            <h3>Breaking News: Major Earthquake Hits West Coast</h3>
-            <p>A powerful earthquake has struck the West Coast, causing widespread damage and disrupting power and
-                transportation services.</p>
-        </div>
 
-        <div class="card">
-            <img src="https://placehold.co/400x200" alt="">
-            <h3>Breaking News: Major Earthquake Hits West Coast</h3>
-            <p>A powerful earthquake has struck the West Coast, causing widespread damage and disrupting power and
-                transportation services.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://placehold.co/400x200" alt="">
-            <h3>Breaking News: Major Earthquake Hits West Coast</h3>
-            <p>A powerful earthquake has struck the West Coast, causing widespread damage and disrupting power and
-                transportation services.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://placehold.co/400x200" alt="">
-            <h3>Breaking News: Major Earthquake Hits West Coast</h3>
-            <p>A powerful earthquake has struck the West Coast, causing widespread damage and disrupting power and
-                transportation services.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://placehold.co/400x200" alt="">
-            <h3>Breaking News: Major Earthquake Hits West Coast</h3>
-            <p>A powerful earthquake has struck the West Coast, causing widespread damage and disrupting power and
-                transportation services.</p>
-        </div>
+    <div id="cards-container" class="flex cards container ">
+        
     </div>
+
+    <template id="template-news-card" >
+        <div class="card">
+            <img id="news-img" src="https://placehold.co/400x200" alt="">
+            <h3 id="news-title" >Breaking News: Major Earthquake Hits West Coast</h3>
+            <p id="news-desc" >A powerful earthquake has struck the West Coast, causing widespread damage and disrupting power and
+                transportation services.</p>
+        </div>
+    </template>
 
     <script src="index.js"></script>
 </body>
