@@ -11,6 +11,7 @@
         position: absolute;
         top: 72px;
         right: -100%;
+        display: none;
         background-color: var(--primary-color);
         padding: 1rem;
         gap: 1rem;
@@ -22,6 +23,7 @@
     }
 
     .active{
+        display: inline;
         right: 0;
     }
 
