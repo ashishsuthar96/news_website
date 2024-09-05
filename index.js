@@ -34,8 +34,8 @@ function fillDataInCard(cardClone, result) {
    // const newsSource = cardClone.querySelector("#news-source");
     const newsDesc = cardClone.querySelector("#news-desc");
     newsImg.src = result.image_url;
-    newsTitle.innerHTML = result.title.length >100 ? result.title.substring(0,100)+ "..." : result.title;
-    newsDesc.innerHTML = result.description.length > 300 ? result.description.substring(0,300)+ "..." : result.description;
+    newsTitle.innerHTML = result.title.length > 100 ? `${result.title.substring(0, 100)}...` : result.title;
+    newsDesc.innerHTML = result.description.length > 300 ? `${result.description.substring(0,300)}...` : result.description;
 
     // const date = new Date(result.publishedAt).toLocaleString("en-US", {
     //     timeZone: "Asia/Jakarta",

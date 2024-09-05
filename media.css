@@ -6,12 +6,13 @@
         overflow: hidden;
     }
     .nav-items {
+    
+       display: none;
         width: 100%;
         flex-direction: column-reverse;
         position: absolute;
         top: 72px;
         right: -100%;
-        display: none;
         background-color: var(--primary-color);
         padding: 1rem;
         gap: 1rem;
@@ -22,9 +23,11 @@
         overflow: hidden;
     }
 
+
+
     .active{
-        display: inline;
         right: 0;
+        
     }
 
     .nav-items.active {
